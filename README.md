@@ -1,7 +1,13 @@
 # Muscle Fiber Determination from Laplacian Simulations- A Comparison with DTI
 
-## Conducting a Laplacian Simulation for Segmented Muscle Data
+## Conducting a Laplacian Simulation from Muscle Geometries
 This step is performed using Autodesk Inventor CAD software  
+See [Josh Inouye's videos](https://vimeo.com/user26625780) for tutorials on this process  
+
+If your muscle is in .igs format, it can be imported as a solid into Inventor  
+You can now move along to Creating Aponeuroses on your Muscle Model
+
+If your muscle is in .stl format, you must create a solid from your STL surface:  
 Use Manage>Import to import STL muscle data into Autodesk Inventor  
 Use the Tool to create a base feature from STL  
 Create planes that transect the geometry at regular intervals  
@@ -22,7 +28,13 @@ Define all other surface(s) as slip/symmetry
 Define material as 1g/cm^3, 1000Pa-s fluid  
 Mesh the geometry using automatic feature  
 Conduct simulation  
-When complete, export nodal data in the File menu
+When complete, export nodal data in the File menu  
+This will create an excel file with X Y Z velocities as columns (these are components for your direction vectors)
 
 ## Loading Muscle Surfaces and Fibre Vectors from DTI
-In order to perform comparisons, must have DTI eigenvector data and STL muscle surfaces from segmentation
+In order to perform comparisons, must have DTI eigenvector data and STL muscle surfaces from segmentation  
+The process is:  
+ - verify DTI data and Laplacian sims are in same coordinate system
+ - unitize vectors from DTI and Laplacian
+ - compare each vector to its nearest neighbor
+ - use DTI tracts and find tract...
