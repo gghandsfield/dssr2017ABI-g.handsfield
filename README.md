@@ -1,8 +1,8 @@
 # Muscle Fiber Determination from Laplacian Simulations- A Comparison with DTI
 
 ## Conducting a Laplacian Simulation for Segmented Muscle Data
-This step is performed using Autodesk Inventor CAD software
-Use Manage>Import to import STL muscle data into Autodesk Inventor
+This step is performed using Autodesk Inventor CAD software \n
+Use Manage>Import to import STL muscle data into Autodesk Inventor \n
 Use the Tool to create a base feature from STL
 Create planes that transect the geometry at regular intervals
 In each plane, create 2D cubic splines as a 2D Sketch that approximate the geometry
