@@ -49,6 +49,6 @@ for the projects to which they have been hired. Technicians are responsible for 
 will report to the lab director. Managers are responsible for all aspects of the laboratory and will report to the lab director.
 All lab members are responsible for cleanliness and upkeep of the lab space and equipment.
 
-###### Project Teams
+## Project Teams
 Teams develop around projects that are being worked on collaboratively. All team members are to work diligently on their aims of the
 project, to seek help from teammates and external collaborators, and to work constructively with one another.
