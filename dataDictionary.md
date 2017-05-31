@@ -1,1 +1,3 @@
-Gas energy in megajoules
+Fuel energy: measured in Megajoules
+Pressure: measured in Gigapascals
+Distance: measured in miles
