@@ -38,3 +38,7 @@ The process is:
  - unitize vectors from DTI and Laplacian
  - compare each vector to its nearest neighbor
  - use DTI tracts and find tract...
+ 
+ 
+## Testing
+Full coverage tests passed for YiCao_knnsearch for cases resembling functionality for  DTItractography files
