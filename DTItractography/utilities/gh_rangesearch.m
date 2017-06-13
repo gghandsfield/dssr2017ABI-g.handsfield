@@ -13,21 +13,5 @@ for i = 1:n
     idx{i} = id;
 end
 
-% % Old Method
-% [a,b] = find(distmat < distance); % row and column index of locations within distance
-% 
-% sorted = sortrows([b a]); % sort the row and column indices by column
-% steps = find(diff(sorted(:,1))); % find locations where row changes
-% 
-% %for each row, assemble corresponding columns into cell array
-% idx = cell(length(steps),1); 
-% begin = 1;
-% for i = 1:length(steps)
-%     idx{i,1} = sorted(begin:steps(i),2)';
-%     begin = steps(i) + 1;
-% end
-% idx{i+1,1} = sorted(begin:end,2)';
-
-
 end
 
