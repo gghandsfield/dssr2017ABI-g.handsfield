@@ -41,6 +41,7 @@ The process is:
  
  
 ## Testing
-Full coverage tests passed for YiCao_knnsearch for cases resembling functionality for  DTItractography files
+Full coverage tests passed for YiCao_knnsearch for cases resembling functionality for DTItractography files
 Only partial coverage tested for ipdm.m since its use in this project is limited
-
+Full coverage tests passed for gh_rangesearch for cases resembling functionality for DTItractography
+Only partial coverage tested for inpolyhedron.m since its use in this project is limited

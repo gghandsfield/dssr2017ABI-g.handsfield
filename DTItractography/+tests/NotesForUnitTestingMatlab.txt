@@ -7,5 +7,5 @@ suite = TestSuite.fromPackage('tests');
 
 runner = TestRunner.withTextOutput;
 runner.addPlugin(CodeCoveragePlugin.forFolder(pwd))
-result = runner.run(suite)
 suite = TestSuite.fromPackage('tests');
+result = runner.run(suite)
