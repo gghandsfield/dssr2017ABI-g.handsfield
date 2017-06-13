@@ -15,6 +15,10 @@ In each plane, create 2D cubic splines as a 2D Sketch that approximate the geome
 Note: you can use slice graphics to cut away part of the STL to see what you're doing  
 When finished, loft the cubic splines to a solid
 
+## Workflow
+
+![](https://wiki.auckland.ac.nz/download/attachments/121272604/Laplacian%20Simulation%20Comparison.png?version=9&modificationDate=1497391299000&api=v2)
+
 ###### Creating Aponeuroses on your Muscle Model
 You need to create regions of your muscle solid that correspond to the location of aponeuroses  
 One approach to do this is to create a surface in 3D space that cuts off part of your solid  
@@ -45,3 +49,4 @@ Full coverage tests passed for YiCao_knnsearch for cases resembling functionalit
 Only partial coverage tested for ipdm.m since its use in this project is limited
 Full coverage tests passed for gh_rangesearch for cases resembling functionality for DTItractography
 Only partial coverage tested for inpolyhedron.m since its use in this project is limited
+
