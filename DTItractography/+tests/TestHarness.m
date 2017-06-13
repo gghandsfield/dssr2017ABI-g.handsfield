@@ -91,6 +91,22 @@ classdef TestHarness < matlab.unittest.TestCase
             expSolution = {[1;4];[2];[3]};
             verifyEqual(testCase,actSolution,expSolution);
         end	
+		
+		
+%% unit tests for inpolyhedron.m
+		function test_inpolyhedron_OnePt(testCase)
+			load('+tests/inpolyhedronTestData.mat')
+            actSolution = inpolyhedron(fv,pts(4,:));
+            expSolution = logical(1);
+            verifyEqual(testCase,actSolution,expSolution);
+        end
+		
+		function test_inpolyhedron_ManyPts(testCase)
+			load('+tests/inpolyhedronTestData.mat')
+            actSolution = inpolyhedron(fv,pts([1 2 3 4 17],:));
+            expSolution = logical([1;0;0;1;1]);
+            verifyEqual(testCase,actSolution,expSolution);
+        end
                 
     end
     
