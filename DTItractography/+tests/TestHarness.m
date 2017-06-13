@@ -65,6 +65,32 @@ classdef TestHarness < matlab.unittest.TestCase
 						sqrt(12) sqrt(3) 0 sqrt(3) sqrt(12)];
             verifyEqual(testCase,actSolution,expSolution);
         end
+		
+%% unit tests for gh_rangesearch.m
+		function test_gh_rangesearch_Simple(testCase)
+            actSolution = gh_rangesearch([1 1 1],[1 1 1],1);
+            expSolution = {1};
+            verifyEqual(testCase,actSolution,expSolution);
+        end
+		
+		function test_gh_rangesearch_OneRowTwoRows(testCase)
+            actSolution = gh_rangesearch([1 1 1],[1 1 1;1.1 1.1 1.1],1);
+            expSolution = {[1];[1]};
+            verifyEqual(testCase,actSolution,expSolution);
+        end		
+		
+		function test_gh_rangesearch_TwoRowsOneRow(testCase)
+            actSolution = gh_rangesearch([1 1 1;1.1 1.1 1.1],[1 1 1],1);
+            expSolution = {[1;2]};
+            verifyEqual(testCase,actSolution,expSolution);
+        end		
+		
+		function test_gh_rangesearch_MultiRows(testCase)
+            actSolution = gh_rangesearch([1 1 1;3 3 3;5 5 5;1.1 1.1 1.1;2 2 2],...
+											[1 1 1; 3.1 3.1 3.1; 5 5 5],1);
+            expSolution = {[1;4];[2];[3]};
+            verifyEqual(testCase,actSolution,expSolution);
+        end	
                 
     end
     
