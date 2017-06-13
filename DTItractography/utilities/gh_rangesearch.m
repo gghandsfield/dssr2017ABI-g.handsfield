@@ -3,6 +3,11 @@ function [ idx ] = gh_rangesearch( data1,data2,distance )
 %   Uses John D'Errico's ipdm function and manipulates answer to return the
 %   same format as rangesearch.
 %   See MATLAB documentation for function rangesearch
+%
+% 	Notes on usage syntax:
+% 	for every row in data2, you get a column array
+% 	column array tells you which rows in data1 are within distance
+% 	all column arrays are stored in a cell output
 
 distmat = ipdm(data1,data2); %distance matrix
 
