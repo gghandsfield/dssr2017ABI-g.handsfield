@@ -44,12 +44,7 @@ unitvec = mean_vector./sqrt(sum(mean_vector.^2,2));
     
 %Superficial Pennation Angle (origin)
     idx_5mm = gh_rangesearch(facecntr,origins,5); %indices of facecenter within 5mm of origins
-    
-    % code below is to deal with origins that have no facecenters within 5mm, reassess at 7mm
-%     if find(cellfun(@isempty,idx_5mm))
-%         temp = find(cellfun(@isempty,idx_5mm));
-%         idx_5mm(temp,1) = gh_rangesearch(facecntr,origins(temp,:),7);
-%     end
+
     supPennAngle = zeros(length(idx_5mm),1);
     for rr = 1:length(idx_5mm)
         
