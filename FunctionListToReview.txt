@@ -1,0 +1,9 @@
+DTIvecsfromTracts.m
+
+note: procrustes is in Statistics and Machine Learning Toolbox
+
+VectorCompare_working.m
+
+FiberTractCheck.m
+
+CFDtractography.m
