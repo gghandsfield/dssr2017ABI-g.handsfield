@@ -1,7 +1,8 @@
 function [ deepPennAngle, supPennAngle ] = compPennation( STL, origins, insertions, mean_vector )
 %compPennation Compute pennation angles for muscle data. 
+%   
 %   INPUTS:
-%   STL is the STL muscle input data
+%   STL is the STL muscle input data, structure with fields faces, vertices, normals
 %   origins is x,y,z locations of n origin tracts (nx3)
 %   insertions is x,y,z locations of n insertion tracts (nx3)
 %   mean_vector is average unit vector of n tracts (nx3)
